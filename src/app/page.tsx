@@ -58,19 +58,19 @@ const audiences = [
     title: "Parents and Families",
     description:
       "Explore support options, learn how to get started and find a way to contact Cedars.",
-    href: "/who-we-work-with/families",
+    href: "#contact",
   },
   {
     title: "Schools",
     description:
       "Find information about SEN support, teacher training and school consultancy.",
-    href: "/who-we-work-with/schools",
+    href: "#contact",
   },
   {
     title: "Hospitals and Healthcare Institutions",
     description:
       "Learn about the assessment, therapy and consultation services listed by Cedars.",
-    href: "/who-we-work-with/hospitals",
+    href: "#contact",
   },
 ];
 
@@ -119,7 +119,7 @@ export default function HomePage() {
                 healthcare institutions.
               </p>
               <div className="button-row">
-                <ButtonLink href="/contact">Book a consultation</ButtonLink>
+                <ButtonLink href="#contact">Book a consultation</ButtonLink>
                 <ButtonLink href="#services" variant="secondary">
                   Explore our services
                 </ButtonLink>
@@ -169,15 +169,15 @@ export default function HomePage() {
                 <span className="service-number">{service.number}</span>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <a className="card-link" href="/services">
-                  Explore services <span aria-hidden="true">→</span>
+                <a className="card-link" href="#contact">
+                  Ask about this service <span aria-hidden="true">→</span>
                 </a>
               </article>
             ))}
           </div>
           <div className="section-action">
-            <ButtonLink href="/services" variant="secondary">
-              View all services
+            <ButtonLink href="#services" variant="secondary">
+              Explore the services
             </ButtonLink>
           </div>
         </Container>
@@ -195,7 +195,7 @@ export default function HomePage() {
                 behavioural challenges. Its work includes families, K–12
                 schools, children&apos;s hospitals and healthcare institutions.
               </p>
-              <ButtonLink href="/about" variant="secondary">
+              <ButtonLink href="#about" variant="secondary">
                 Learn about Cedars
               </ButtonLink>
             </div>
@@ -224,7 +224,7 @@ export default function HomePage() {
                 <h3>{audience.title}</h3>
                 <p>{audience.description}</p>
                 <a className="card-link" href={audience.href}>
-                  Explore information <span aria-hidden="true">→</span>
+                  Ask about this support <span aria-hidden="true">→</span>
                 </a>
               </article>
             ))}
@@ -265,8 +265,8 @@ export default function HomePage() {
                 A parent-focused webinar programme about child development,
                 behaviour, parenting and related topics.
               </p>
-              <a className="card-link" href="/programmes/parents-playbook">
-                Learn about the programme <span aria-hidden="true">→</span>
+              <a className="card-link" href="#contact">
+                Ask about the programme <span aria-hidden="true">→</span>
               </a>
             </article>
             <article className="programme-card programme-card--outreach">
@@ -276,8 +276,8 @@ export default function HomePage() {
                 An awareness and community outreach initiative that offers
                 information and free consultation opportunities.
               </p>
-              <a className="card-link" href="/programmes/quarterly-outreach">
-                Learn about the programme <span aria-hidden="true">→</span>
+              <a className="card-link" href="#contact">
+                Ask about the programme <span aria-hidden="true">→</span>
               </a>
             </article>
           </div>
@@ -300,8 +300,8 @@ export default function HomePage() {
                 For questions about a specific service or how to begin, contact
                 Cedars directly.
               </p>
-              <ButtonLink href="/faqs" variant="secondary">
-                More questions
+              <ButtonLink href="#faqs" variant="secondary">
+                Explore these questions
               </ButtonLink>
             </div>
             <div className="faq-list">
@@ -328,7 +328,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="contact-actions">
-              <ButtonLink href="/contact">Contact Cedars</ButtonLink>
+              <ButtonLink href="#contact">Contact Cedars</ButtonLink>
               <ButtonLink href={whatsappUrl} variant="secondary">
                 Chat on WhatsApp
               </ButtonLink>
