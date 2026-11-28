@@ -350,6 +350,17 @@ h1 {
   color: var(--cedars-white);
 }
 
+.footer-brand .brand-name {
+  color: var(--cedars-white);
+  font-size: 1rem;
+}
+
+.footer-location {
+  margin: 0.4rem 0 0;
+  color: #d5e0d7;
+  font-size: 0.85rem;
+}
+
 .footer-brand .brand-description,
 .footer-note {
   color: #d5e0d7;

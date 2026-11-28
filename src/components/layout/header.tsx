@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 
@@ -19,7 +20,7 @@ const whatsappUrl =
 
 function Brand() {
   return (
-    <a className="brand" href="/" aria-label="Cedars Special Needs Consult home">
+    <Link className="brand" href="/" aria-label="Cedars Special Needs Consult home">
       <span className="brand-logo-frame">
         <Image
           alt="Cedars Special Needs Consult"
@@ -30,7 +31,7 @@ function Brand() {
           src="/images/logo/cedars-logo.jpeg"
         />
       </span>
-    </a>
+    </Link>
   );
 }
 
@@ -48,9 +49,9 @@ export function Header() {
           <Brand />
           <nav className="desktop-nav" aria-label="Main navigation">
             {navigation.map((item) => (
-              <a href={item.href} key={item.href}>
+              <Link href={item.href} key={item.href}>
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="header-actions">
@@ -78,13 +79,13 @@ export function Header() {
           hidden={!menuOpen}
         >
           {navigation.map((item) => (
-            <a href={item.href} key={item.href} onClick={closeMenu}>
+            <Link href={item.href} key={item.href} onClick={closeMenu}>
               {item.label}
-            </a>
+            </Link>
           ))}
-          <a href="/contact" onClick={closeMenu}>
+          <Link href="/contact" onClick={closeMenu}>
             Book a consultation
-          </a>
+          </Link>
           <a href={whatsappUrl} onClick={closeMenu}>
             Chat on WhatsApp
           </a>

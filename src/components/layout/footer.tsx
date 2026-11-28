@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/container";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -6,20 +7,15 @@ export function Footer() {
       <Container>
         <div className="footer-inner">
           <div className="footer-brand">
-            <a className="brand" href="/" aria-label="Cedars Special Needs Consult home">
-              <span className="brand-mark" aria-hidden="true">
-                C
-              </span>
-              <span>
-                <span className="brand-name">Cedars Special Needs Consult</span>
-                <span className="brand-description">Ilorin, Kwara State, Nigeria</span>
-              </span>
-            </a>
+            <Link className="brand" href="/" aria-label="Cedars Special Needs Consult home">
+              <span className="brand-name">Cedars Special Needs Consult</span>
+            </Link>
+            <p className="footer-location">Ilorin, Kwara State, Nigeria</p>
             <nav className="footer-links" aria-label="Footer navigation">
-              <a href="/about">About</a>
-              <a href="/services">Services</a>
-              <a href="/contact">Contact</a>
-              <a href="/privacy-policy">Privacy</a>
+              <Link href="/about">About</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/privacy-policy">Privacy</Link>
             </nav>
           </div>
           <p className="footer-note">
