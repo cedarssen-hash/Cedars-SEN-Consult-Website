@@ -458,6 +458,227 @@ h1 {
   }
 }
 
+/* Services overview and detail pages */
+.services-page-hero,
+.service-detail-hero {
+  background:
+    radial-gradient(circle at 86% 30%, rgb(169 189 168 / 32%), transparent 28%),
+    linear-gradient(120deg, var(--cedars-warm), #f2f5ef);
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.services-page-hero h1,
+.service-detail-hero h1 {
+  max-width: 850px;
+  font-size: clamp(2.5rem, 5.6vw, 4.7rem);
+}
+
+.services-page-hero > .container > p:last-child {
+  max-width: 700px;
+  margin: 1rem 0 0;
+  color: var(--cedars-muted);
+  font-size: 1.1rem;
+}
+
+.services-index-section {
+  background: var(--cedars-white);
+}
+
+.services-page-contact {
+  background: var(--cedars-sage-light);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.services-page-contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-radius: 1rem;
+  background: var(--cedars-forest-deep);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  color: var(--cedars-white);
+}
+
+.services-page-contact .eyebrow {
+  color: #c6d8c8;
+}
+
+.services-page-contact h2 {
+  margin: 0;
+  color: var(--cedars-white);
+  font-family: Poppins, Inter, Arial, sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.services-page-contact p:last-child {
+  max-width: 640px;
+  margin: 0.65rem 0 0;
+  color: #e0e9e1;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2.25rem;
+  color: var(--cedars-muted);
+  font-size: 0.85rem;
+}
+
+.breadcrumbs a {
+  color: var(--cedars-forest);
+  text-underline-offset: 0.2em;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--cedars-ink);
+}
+
+.service-detail-summary {
+  max-width: 720px;
+  margin: 1.1rem 0 0;
+  color: var(--cedars-muted);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.service-detail-hero .button-row {
+  margin-top: 1.5rem;
+}
+
+.service-detail-content {
+  background: var(--cedars-white);
+}
+
+.service-detail-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+  align-items: start;
+  gap: clamp(2rem, 6vw, 5.5rem);
+}
+
+.service-detail-content h2 {
+  margin: 1.7rem 0 0.75rem;
+  font-size: 1.35rem;
+}
+
+.service-detail-text {
+  max-width: 680px;
+  color: var(--cedars-muted);
+}
+
+.service-question-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--cedars-muted);
+}
+
+.service-question-list li::marker {
+  color: var(--cedars-forest);
+}
+
+.service-privacy-note {
+  margin: 1.4rem 0 0;
+  border-left: 3px solid var(--cedars-sage);
+  background: var(--cedars-warm);
+  padding: 0.9rem 1rem;
+  color: var(--cedars-forest-deep);
+  font-size: 0.92rem;
+}
+
+.service-contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  border: 1px solid var(--cedars-border);
+  border-radius: 1rem;
+  background: var(--cedars-warm);
+  padding: 1.5rem;
+}
+
+.service-contact-card h2 {
+  margin: 0;
+  color: var(--cedars-forest-deep);
+  font-size: 1.35rem;
+}
+
+.service-contact-card p {
+  margin: 0;
+  color: var(--cedars-muted);
+  font-size: 0.94rem;
+}
+
+.service-contact-card > a:not(.button-link) {
+  color: var(--cedars-forest);
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+.service-faq-section {
+  background: #f0f4ef;
+  padding-block: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.service-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.service-faq-grid .faq-item {
+  border: 1px solid var(--cedars-border);
+  border-radius: 0.85rem;
+  background: var(--cedars-white);
+  padding: 1.2rem;
+}
+
+.service-faq-grid .faq-item summary {
+  padding-right: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.related-services-section {
+  background: var(--cedars-white);
+}
+
+.service-back-link {
+  padding-block: 0 2.5rem;
+}
+
+.service-back-link a {
+  color: var(--cedars-forest);
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 850px) {
+  .service-detail-columns {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.65fr);
+    gap: 2rem;
+  }
+
+  .service-faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-page-contact-inner,
+  .service-detail-columns {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .service-contact-card {
+    margin-top: 0.5rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

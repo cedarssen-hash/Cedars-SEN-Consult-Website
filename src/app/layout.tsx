@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import "./globals.css";
@@ -9,12 +10,12 @@ export const metadata: Metadata = {
     template: "%s | Cedars Special Needs Consult",
   },
   description:
-    "A welcoming foundation for the Cedars Special Needs Consult website.",
+    "Information about services and support for children, families, schools and healthcare institutions.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
       <body>

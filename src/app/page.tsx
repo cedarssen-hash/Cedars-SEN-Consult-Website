@@ -2,56 +2,14 @@ import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { ServiceCard } from "@/components/services/service-card";
+import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Home",
   description:
     "Professional assessment, behavioural and developmental support, educational services and guidance for children, families, schools and healthcare institutions in Ilorin.",
 };
-
-const services = [
-  {
-    number: "01",
-    title: "Behavioural Assessment and Therapy",
-    description: "Behavioural assessment and behavioural therapy.",
-  },
-  {
-    number: "02",
-    title: "Communication and Language Therapy",
-    description: "Communication and language therapy services.",
-  },
-  {
-    number: "03",
-    title: "Assessment Services",
-    description: "Assessment services for children and families.",
-  },
-  {
-    number: "04",
-    title: "Parent Management Training",
-    description: "Parent-focused training and guidance.",
-  },
-  {
-    number: "05",
-    title: "Special Educational Needs Support",
-    description:
-      "Remedial education, bridge courses and individualised educational support.",
-  },
-  {
-    number: "06",
-    title: "Teacher Training",
-    description: "Training for teachers on special educational needs support.",
-  },
-  {
-    number: "07",
-    title: "Consultation",
-    description: "Consultation for families and institutions.",
-  },
-  {
-    number: "08",
-    title: "School Consultancy and SEN Facility Setup",
-    description: "School consultancy and special educational needs facility setup.",
-  },
-];
 
 const audiences = [
   {
@@ -165,19 +123,12 @@ export default function HomePage() {
           />
           <div className="service-grid">
             {services.map((service) => (
-              <article className="home-service-card" key={service.number}>
-                <span className="service-number">{service.number}</span>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-                <a className="card-link" href="#contact">
-                  Ask about this service <span aria-hidden="true">→</span>
-                </a>
-              </article>
+              <ServiceCard key={service.slug} service={service} />
             ))}
           </div>
           <div className="section-action">
-            <ButtonLink href="#services" variant="secondary">
-              Explore the services
+            <ButtonLink href="/services" variant="secondary">
+              View all services
             </ButtonLink>
           </div>
         </Container>

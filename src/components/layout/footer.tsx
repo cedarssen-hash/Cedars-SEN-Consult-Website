@@ -12,10 +12,10 @@ export function Footer() {
             </Link>
             <p className="footer-location">Ilorin, Kwara State, Nigeria</p>
             <nav className="footer-links" aria-label="Footer navigation">
-              <Link href="#about">About</Link>
-              <Link href="#services">Services</Link>
-              <Link href="#faqs">FAQs</Link>
-              <Link href="#contact">Contact</Link>
+              <Link href="/#about">About</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/#faqs">FAQs</Link>
+              <Link href="/#contact">Contact</Link>
             </nav>
           </div>
           <p className="footer-note">

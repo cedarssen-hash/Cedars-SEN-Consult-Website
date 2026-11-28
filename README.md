@@ -8,7 +8,7 @@ This repository is dedicated to the public website. It is separate from the prof
 
 ## Current status
 
-**Phase 1 — foundation and design system.** The current home route is a temporary foundation preview. The approved marketing homepage will be built in Phase 2 after review.
+**Phase 3 — services.** The homepage, services overview and eight service detail pages are in place. Service-specific details that have not been confirmed are clearly directed to Cedars for follow-up.
 
 ## Project documents
 

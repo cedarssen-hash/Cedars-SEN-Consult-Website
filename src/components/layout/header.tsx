@@ -7,12 +7,12 @@ import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
 
 const navigation = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#who-we-work-with", label: "Who We Work With" },
-  { href: "#programmes", label: "Programmes" },
-  { href: "#faqs", label: "FAQs" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/services", label: "Services" },
+  { href: "/#who-we-work-with", label: "Who We Work With" },
+  { href: "/#programmes", label: "Programmes" },
+  { href: "/#faqs", label: "FAQs" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 const whatsappUrl =
@@ -55,7 +55,7 @@ export function Header() {
             ))}
           </nav>
           <div className="header-actions">
-            <ButtonLink href="#contact">Book a consultation</ButtonLink>
+            <ButtonLink href="/#contact">Book a consultation</ButtonLink>
             <ButtonLink href={whatsappUrl} variant="secondary">
               WhatsApp
             </ButtonLink>
@@ -83,7 +83,7 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <Link href="#contact" onClick={closeMenu}>
+          <Link href="/#contact" onClick={closeMenu}>
             Book a consultation
           </Link>
           <a href={whatsappUrl} onClick={closeMenu}>
