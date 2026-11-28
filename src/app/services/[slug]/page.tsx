@@ -7,6 +7,9 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { ServiceCard } from "@/components/services/service-card";
 import { getRelatedServices, getService, services } from "@/data/services";
 
+const whatsappUrl =
+  "https://wa.me/2348135618486?text=Hello%20Cedars%20Special%20Needs%20Consult%2C%20I%20would%20like%20to%20make%20an%20enquiry.";
+
 type ServicePageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -95,7 +98,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 next steps for making an enquiry.
               </p>
               <ButtonLink href="/#contact">Contact Cedars</ButtonLink>
-              <a href="https://wa.me/2348135618486">Chat on WhatsApp</a>
+              <a href={whatsappUrl}>Chat on WhatsApp</a>
             </aside>
           </div>
         </Container>
